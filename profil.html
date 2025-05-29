@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Profil SMP Takhassus Al-Furqon & Ponpes The Holy Al-Furqon | Sekolah Islam Terpadu Semarang</title>
+  <meta name="description"
+    content="Profil resmi SMP Takhassus Al-Furqon dan Ponpes The Holy Al-Furqon. Menyediakan pendidikan Islam terpadu yang unggul dalam tahfidz, ilmu diniyah, dan prestasi akademik." />
+  <meta name="keywords"
+    content="profil sekolah Islam, SMP Takhassus Al-Furqon, Ponpes Al-Furqon, pondok pesantren Semarang, pendidikan Islam terpadu, sekolah tahfidz, pesantren terbaik semarang">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smpal-furqon.github.io/SMP-Takhassus-Al-Furqon-Semarang/" />
+  <meta name="author" content="SMP Takhassus Al-Furqon" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Profil SMP & Ponpes Al-Furqon Semarang" />
+  <meta property="og:description" content="Lembaga pendidikan Islam unggulan berbasis Al-Qur'an di Kota Semarang." />
+  <meta property="og:image" content="https://smpal-furqon.github.io/SMP-Takhassus-Al-Furqon-Semarang/gedungponpes.png" />
+  <meta property="og:url" content="https://smpal-furqon.github.io/SMP-Takhassus-Al-Furqon-Semarang/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Profil SMP Takhassus Al-Furqon & Ponpes The Holy Al-Furqon">
+  <meta name="twitter:description" content="Sekolah dan pesantren unggulan di Kota Semarang.">
+  <meta name="twitter:image" content="https://alfurqon.sch.id/assets/og-profil.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind + AOS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <base href="/SMP-Takhassus-Al-Furqon-Semarang/">
+
+  <!-- Style (dipertahankan dari file asli) -->
+  <style>
+    html {
+      font-size: 13px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fbffff;
+      color: #121212;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: relative;
+      top: auto;
+      left: 0;
+      right: 0;
+      transition: top 0.3s ease-in-out;
+      width: 100%;
+      background:
+        /* #9904d4;*/
+        #111827;
+      color: #fff;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5em;
+      position: relative;
+      justify-content: center;
+      flex: 1;
+      left: -5.6%;
+    }
+
+    nav>div {
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      padding-right: 1em;
+    }
+
+    nav a::after {
+      content: "\f107";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s;
+      font-size: 0.75em;
+    }
+
+    nav>div:hover>a {
+      color: #4fc3f7;
+    }
+
+    nav a.no-arrow::after {
+      content: none !important;
+    }
+
+    nav>div:hover>a::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    nav>div:hover .mega-dropdown {
+      position: absolute;
+      top: 100%;
+      display: flex;
+      background: #fff;
+      padding: 2em;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      min-width: 30vw;
+      z-index: 998;
+      border-radius: 10px;
+    }
+
+    nav>div:hover .mega-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      animation: dropdownBounce 0.4s ease-out forwards;
+    }
+
+
+    .mega-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      padding: 2em;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      min-width: 60vw;
+      z-index: 998;
+      border-radius: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transform-origin: top;
+      transition: opacity 0.3s ease;
+    }
+
+
+
+
+    .mega-dropdown .item {
+      flex: 1 1 200px;
+    }
+
+    .mega-dropdown .item i {
+      margin-right: 0.5em;
+      color: #1976d2;
+    }
+
+    .mega-dropdown .item a {
+      display: flex;
+      align-items: center;
+      padding: 0.3em 0;
+      color: #121212;
+      text-decoration: none;
+    }
+
+    .mega-dropdown .item a:hover {
+      color: #4fc3f7;
+    }
+
+    .hero {
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      padding: 0 1em;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 60vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Media query untuk layar lebih besar (desktop): 100% tinggi layar */
+    @media (min-width: 768px) {
+      .hero {
+        position: relative;
+        height: 100vh;
+      }
+    }
+
+    .hero h1 {
+      position: relative;
+      display: inline-block;
+      font-size: 6vw;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+      line-height: 1.2;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .hero h1::after {
+      content: 'Selamat Datang';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 6s steps(1000, end) infinite alternate;
+      line-height: 1.2;
+    }
+
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    .intro-box {
+      background-color: #1bd085;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em;
+      margin: -3em auto 3em;
+      width: 90%;
+      border-radius: 10px;
+      color: #fff;
+      position: relative;
+      z-index: 3;
+    }
+
+    .intro-box h2 {
+      font-size: 1.5em;
+      flex: 1 1 300px;
+    }
+
+    .intro-box p {
+      flex: 2 1 500px;
+      padding-left: 2em;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+    }
+
+
+    .mobile-sidebar {
+      display: none;
+      flex-direction: column;
+      position: fixed !important;
+      top: auto;
+      left: 0;
+      width: 50%;
+      background-color: #363131;
+      padding: 1em;
+      z-index: 1000;
+      overflow-y: auto;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      border-radius: 0px;
+    }
+
+    .mobile-sidebar.show {
+      display: flex;
+      transform: translateX(0);
+      flex-direction: column;
+      z-index: 12;
+    }
+
+    .mobile-sidebar .menu-title {
+      color: white;
+      font-weight: bold;
+      padding: 0.75em 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mobile-sidebar .sub-menu {
+      display: none;
+      flex-direction: column;
+      margin-left: 1em;
+    }
+
+    .mobile-sidebar .sub-menu a {
+      color: #ddd;
+      padding: 0.4em 0;
+      text-decoration: none;
+    }
+
+    .mobile-sidebar .sub-menu a:hover {
+      color: #4fc3f7;
+    }
+
+    .mobile-sidebar .menu-title .arrow {
+      transition: transform 0.3s;
+    }
+
+    .mobile-sidebar .menu-title.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        position: relative;
+        padding: 4em 1em;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+
+
+
+    main.container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "box1 box1 box1 box1"
+        "box2 box2 box2 box2"
+        "box3 box3 box3 box3"
+        "box4 box4 box4 box5"
+        "box9 box9 box9 box5"
+        "box8 box8 box8 box8"
+        "box6 box6 box6 box6"
+        "box7 box7 box7 box7"
+      ;
+      gap: 0px;
+      padding: 1em;
+      max-width: 2560px;
+      margin: auto;
+    }
+
+    .box {
+      padding: 1em;
+      background: #fff;
+      border-radius: 0px;
+      /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);8*/
+    }
+
+    .box1 {
+      grid-area: box1;
+      background: #fbffff;
+      color: rgb(255, 255, 255);
+      padding: 0;
+      margin-top: 1em;
+    }
+
+    .box2 {
+      grid-area: box2;
+      background: #fbffff;
+      color: white;
+      padding: 0;
+    }
+
+    .box3 {
+      grid-area: box3;
+      background: #ffc107;
+    }
+
+    .box4 {
+      grid-area: box4;
+      background: #fbffff;
+    }
+
+    .box5 {
+      grid-area: box5;
+      background:
+        /* #9904d4;*/
+        rgb(246, 248, 249);
+    }
+
+    .box6 {
+      grid-area: box6;
+      background: rgb(246, 248, 249);
+      color: rgb(53, 47, 136);
+      text-align: center;
+    }
+
+    .box7 {
+      grid-area: box7;
+      background: #ffffff;
+      color: white;
+      text-align: center;
+    }
+
+    .box8 {
+      grid-area: box8;
+      background: #fbffff;
+      color: white;
+      text-align: center;
+    }
+
+    .box9 {
+      grid-area: box9;
+      background: rgb(246, 248, 249);
+    }
+
+
+
+    @media (max-width: 768px) {
+      main.container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "box1"
+          "box2"
+          "box3"
+          "box4"
+          "box5"
+          "box8"
+          "box6"
+          "box7";
+      }
+    }
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      display: block;
+      unicode-bidi: isolate;
+    }
+
+    .service-section {
+      padding: 2em 2em;
+      text-align: center;
+    }
+
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    .service-box {
+      background: #fff;
+      padding-bottom: 1em;
+      border-radius: 10px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.062);
+      width: 290px;
+      text-align: center;
+    }
+
+    .service-box img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .service-box {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .estra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .estra {
+        width: 100%;
+      }
+    }
+
+
+    @keyframes dropdownBounce {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px) scale(0.95);
+      }
+
+      60% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0) scale(1.02);
+      }
+
+      80% {
+        transform: translateX(-50%) translateY(-4px) scale(1);
+      }
+
+      100% {
+        transform: translateX(-50%) translateY(0) scale(1);
+      }
+    }
+
+    .hero {
+      position: relative;
+      background-image: url('gedungponpes.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* gelap transparan */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .sticky-header {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      transition: top 0.3s ease-in-out;
+    }
+
+    .dark body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .dark header {
+      background: #222;
+      color: #fff;
+    }
+
+    .dark nav a,
+    .dark .mega-dropdown .item a,
+    .dark .mobile-sidebar .sub-menu a {
+      color: #e0e0e0;
+    }
+
+    .dark nav>div:hover>a {
+      color: #4fc3f7;
+    }
+
+    .dark .box,
+    .dark .box4,
+    .dark .box5,
+    .dark .box6,
+    .dark .box8,
+    .dark .service-box {
+      background: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    .dark .mega-dropdown {
+      background: #2a2a2a;
+    }
+
+    .dark .mobile-sidebar {
+      background-color: #222;
+    }
+
+    .dark .hero::before {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+  </style>
+  <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animate-marquee {
+      animation: marquee 20s linear infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-40 hidden transition-opacity duration-300"
+    id="sidebarOverlay"></div>
+  <!-- mobile sidebar -->
+  <div
+    class="fixed top-auto left-0 h-auto w-auto bg-purple-900 dark:bg-gray-900 text-white z-50 -translate-x-full transition-transform duration-300 ease-in-out p-9 space-y-4 overflow-y-auto shadow-lg pt-16"
+    id="mobileSidebar">
+    <div class="mobile-menu-item mt-16">
+      <div class="menu-title text-2xl" onclick="toggleSubMenu(this)">
+        <a href="./">Beranda</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item">
+      <div class="menu-title text-2xl flex justify-between items-center" onclick="toggleSubMenu(this)">
+        <span>Tentang</span>
+        <span class="arrow transition-transform duration-300 transform origin-center inline-block">▼</span>
+      </div>
+      <div class="sub-menu hidden flex flex-col ml-4 mt-2">
+        <a class="py-1 text-xl" href="profil.html#profil"><i class="fas fa-user"></i>   Profil</a>
+        <a class="py-1 text-xl" href="#visi"><i class="fas fa-bullseye"></i>   Visi &amp; Misi</a>
+        <a class="py-1 text-xl" href="profil.html#sejarah"><i class="fa fa-history"></i>   Sejarah</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item">
+      <div class="menu-title text-2xl flex justify-between items-center" onclick="toggleSubMenu(this)">
+        <span>Info</span>
+        <span class="arrow transition-transform duration-300 transform origin-center inline-block">▼</span>
+      </div>
+      <div class="sub-menu hidden flex flex-col ml-4 mt-2">
+        <a class="py-1 text-xl" href="index.html#infoppdb"><i class="fa-regular fa-bell"></i>   PPDB</a>
+        <a class="py-1 text-xl" href="#Berita"><i class="fa-regular fa-newspaper"></i>   
+          Galeri Kegiatan</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item">
+      <div class="menu-title text-2xl flex justify-between items-center" onclick="toggleSubMenu(this)">
+        <span>Program</span>
+        <span class="arrow transition-transform duration-300 transform origin-center inline-block">▼</span>
+      </div>
+      <div class="sub-menu hidden flex flex-col ml-4 mt-2">
+        <a class="py-1 text-xl" href="#program"><i class="fa-regular fa-thumbs-up"></i>   Program
+          Unggulan</a>
+        <a class="py-1 text-xl" href="#ekstrakurikuler"><i class="fa-regular fa-lightbulb"></i>   Ekstakurikuler</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item">
+      <div class="menu-title text-2xl flex justify-between items-center" onclick="toggleSubMenu(this)">
+        <span>Kontak</span>
+        <span class="arrow transition-transform duration-300 transform origin-center inline-block">▼</span>
+      </div>
+      <div class="sub-menu hidden flex flex-col ml-4 mt-2">
+        <a class="py-1 text-xl" href="#kontak"><i class="fas fa-share-alt"></i>   Kontak Kami</a>
+        <a class="py-1 text-xl" href="#lokasi"><i class="fas fa-map-marker-alt"></i>   Lokasi</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item">
+      <label class="flex items-center cursor-pointer">
+        <input class="hidden" type="checkbox" />
+        <div class="w-10 h-5 flex items-center bg-gray-300 rounded-full p-1">
+          <div class="w-4 h-4 bg-white rounded-full shadow-md transform transition duration-300 ease-in-out"></div>
+        </div>
+        <span class="ml-2 text-2xl text-white">Dark Mode</span>
+      </label>
+    </div>
+  </div> <!-- closing sidebar -->
+  <!-- hero dengan gambar yang berganti2 -->
+  <section class="hero relative overflow-hidden">
+    <div class="absolute inset-0 z-0" id="heroSliderImages">
+      <img class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        src="gedung ponpes.png" />
+      <img class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        src="images1.jpg" />
+      <img class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        src="images2.jpg" />
+    </div>
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+    <div
+      class="hero-content relative z-20 flex flex-col justify-center items-center h-full text-white text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold">Selamat Datang</h1>
+      <p class="mt-4 text-lg md:text-2xl">Di Website Resmi SMP Takhassus Al-Furqon</p>
+      <a class="mt-6 bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded text-white font-semibold transition"
+        href="index.html#ppdb">
+        Info PPDB
+      </a>
+      <p class="mt-16 text-4xl justify-center items-center">
+        <a href="https://www.facebook.com/ponpes.alfurqon.35" target="_blank"><i
+            class="fab fa-facebook mr-2 mt-1 transition-transform duration-300 hover:scale-150 hover:text-yellow-500"></i>
+        </a>   
+        <a href="https://www.instagram.com/ponpes.the_holy_alfurqon" target="_blank"><i
+            class="fab fa-instagram mr-2 mt-1 transition-transform duration-300 hover:scale-150 hover:text-yellow-500"></i>
+        </a>   
+        <a href="https://wa.me/6285189064063" target="_blank"><i
+            class="fab fa-whatsapp mr-2 mt-1 transition-transform duration-300 hover:scale-150 hover:text-yellow-500"></i>
+        </a>   
+        <a href="https://www.youtube.com/channel/UCXgqnyXj0kU7UtRkrZ2HKLQ" target="_blank"><i
+            class="fab fa-youtube mr-2 mt-1 transition-transform duration-300 hover:scale-150 hover:text-yellow-500"></i>
+        </a>
+      </p>
+    </div>
+  </section> <!-- akhir hero -->
+  <!-- HEADER DAN NAVBAR DESKTOP -->
+  <header class="shadow-lg" id="mainHeader">
+    <div class="flex items-center space-x-2 text-2xl">
+      <img alt="Logo" class="h-10 w-auto" src="logosmp.png" />
+      <span>SMP Takhassus Al-Furqon</span>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleSidebar()">☰</button>
+    <nav>
+      <div><a class="home no-arrow" href="./">Beranda</a></div>
+      <div>
+        <a class="teks menu utama" href="profil.html#profil">Tentang</a>
+        <div class="mega-dropdown">
+          <div class="item"><a href="profil.html#profil"><i class="fas fa-user"></i> Profil</a></div>
+          <div class="item"><a href="#visi"><i class="fas fa-bullseye"></i> Visi &amp; Misi</a></div>
+          <div class="item"><a href="profil.html#sejarah"><i class="fa fa-history"></i> Sejarah</a></div>
+        </div>
+      </div>
+      <div>
+        <a href="index.html#infoppdb">Info</a>
+        <div class="mega-dropdown">
+          <div class="item"><a href="index.html#infoppdb"><i class="fa-regular fa-bell"></i> PPDB</a></div>
+          <div class="item"><a href="#Berita"><i class="fa-regular fa-newspaper"></i> Galeri Kegiatan</a></div>
+        </div>
+      </div>
+      <div>
+        <a href="#program">Program</a>
+        <div class="mega-dropdown">
+          <div class="item"><a href="#program"><i class="fa-regular fa-thumbs-up"></i> Program Unggulan</a></div>
+          <div class="item"><a href="#ekstrakurikuler"><i class="fa-regular fa-lightbulb"></i>Ekstakurikuler</a></div>
+        </div>
+      </div>
+      <div>
+        <a href="#contact">Kontak</a>
+        <div class="mega-dropdown">
+          <div class="item"><a href="#kontak"><i class="fas fa-share-alt"></i> Kontak Kami</a></div>
+          <div class="item"><a href="#lokasi"><i class="fas fa-map-marker-alt"></i> Lokasi</a></div>
+        </div>
+      </div>
+    </nav>
+    <div class="hidden md:flex items-center ml-4" id="darkToggleDesktop">
+      <label class="flex items-center cursor-pointer">
+        <input class="hidden" type="checkbox" />
+        <div class="w-10 h-5 flex items-center bg-gray-300 rounded-full p-1">
+          <div class="w-4 h-4 bg-white rounded-full shadow-md transform transition duration-300 ease-in-out"></div>
+        </div>
+        <span class="ml-2 text-sm text-white">Dark Mode</span>
+      </label>
+    </div>
+  </header> <!-- akhir header -->
+  <!-- gambar iklan -->
+  <div><a href="index.html#ppdb"><img
+        class="w-full flex-shrink-0 h-auto md:h-auto overflow-hidden transition-transform duration-300 hover:scale-110"
+        src="add1.jpg" /></a>
+  </div>
+
+  <!-- MAIN KONTEN DENGAN BOX -->
+  <main class="container shadow-lg">
+    <!-- teks berjalan-->
+    <div class="box box2">
+      <div class="overflow-hidden text-gray-900 text-xl px-4 min-h-[28px] flex items-center w-full relative">
+        <div class="absolute whitespace-nowrap animate-marquee">
+          <span class="px-8">🟣 Pendaftaran Santri Baru Tahun Ajaran 2025/2026 telah dibuka! Klik tombol daftar untuk
+            mendafar secara online lewat Google form.</span>
+          <span class="px-8">🟣 Pendaftaran Santri Baru Tahun Ajaran 2025/2026 telah dibuka! Klik tombol daftar untuk
+            mendafar secara online lewat Google form
+            .</span>
+        </div>
+      </div>
+    </div>
+    <!--konten utama-->
+    <div class="box box4 p-1" id="profil">
+      <section class="p-1 fade-in" id="infoppdb">
+        <main class="p-0">
+          <section class="bg-gradient-to-br from-purple-100 to-white rounded-2xl shadow-lg p-6 max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+              <div>
+                <img src="gedungponpes.png" alt="Gedung Ponpes" class="rounded-xl shadow w-full object-cover" />
+              </div>
+              <div>
+                <h2 class="text-3xl font-bold text-purple-800 mb-4">Profil SMP Takhassus Al-Furqon</h2>
+                <p class="mb-4">
+                  SMP Takhassus Al-Furqon adalah sekolah Islam terpadu yang berkomitmen membentuk generasi berakhlak,
+                  berilmu,
+                  dan bertanggung jawab. Kami memadukan kurikulum nasional dan kurikulum pesantren yang seimbang.
+                </p>
+                <div class="space-y-2">
+                  <h3 class="text-lg font-semibold text-purple-700">Struktur Organisasi</h3>
+                  <ul class="list-disc list-inside">
+                    <li>Ketua Yayasan: KH. Lubabul Ma’ali Ahmad, S.Pd.</li>
+                    <li>Kepala Sekolah: Hj. Faroh Khoridatul Fitri, M.Pd.</li>
+                    <li>Bendahara: Qutufuha Daniyah, S.Pd.</li>
+                    <li>Kepala TU: Nurul Aeni</li>
+                  </ul>
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-lg font-semibold text-purple-700">Visi dan Misi</h3>
+                  <p><strong>Visi:</strong> Menjadi sekolah unggul dalam ilmu dan akhlak.</p>
+                  <p><strong>Misi:</strong> Mendidik dengan cinta Al-Qur'an, ilmu, dan amal sholeh.</p>
+                </div>
+                <a href="https://forms.gle/LvCSA2httFL5ESFy8" target="_blank"
+                  class="inline-block mt-6 bg-purple-800 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                  Daftar
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-10 max-w-4xl mx-auto bg-white rounded-2xl shadow p-6">
+            <article class="space-y-6">
+              <h2 class="text-2xl font-bold text-purple-800">SMP Takhassus Al-Furqon: Menanamkan Akhlak, Ilmu, dan
+                Tanggung Jawab</h2>
+
+              <div id="sejarah">
+                <h3 class="text-xl font-semibold">Sejarah dan Akar Spiritual Yayasan</h3>
+                <p>Yayasan Pondok Pesantren The Holy Al-Furqon berdiri sejak tahun 1986, didirikan oleh KH. Afifuddin
+                  Musytary Al-Hafidz. Beliau adalah seorang ulama kharismatik dengan dedikasi tinggi dalam dunia
+                  pendidikan Islam. Dengan visi besar membentuk generasi Qur'ani yang tangguh, beliau memulai langkah
+                  dengan mendirikan pesantren yang menjadi cikal bakal berbagai lembaga pendidikan di bawah yayasan ini.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Lahirnya SMP Takhassus Al-Furqon</h3>
+                <p>SMP Takhassus Al-Furqon hadir sebagai respon atas kebutuhan masyarakat akan lembaga pendidikan yang
+                  mampu menggabungkan nilai-nilai Islam dan kurikulum akademik secara seimbang. Sekolah ini menjadi
+                  bagian dari upaya yayasan dalam memperluas cakupan pendidikan Islam terpadu yang mengutamakan akhlak,
+                  ilmu, dan tanggung jawab sosial.</p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Visi dan Misi</h3>
+                <p><strong>Visi:</strong> Membentuk generasi muslim yang berakhlak mulia, berilmu luas, dan bertanggung
+                  jawab.</p>
+                <p><strong>Misi:</strong></p>
+                <ul class="list-disc list-inside ml-4">
+                  <li>Menanamkan nilai-nilai keislaman.</li>
+                  <li>Menggabungkan kurikulum nasional dan pesantren.</li>
+                  <li>Menumbuhkan karakter disiplin dan kemandirian.</li>
+                  <li>Menciptakan lingkungan belajar islami dan berprestasi.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Kurikulum Terpadu</h3>
+                <p>Menggabungkan Kurikulum Nasional (Matematika, IPA, Bahasa, dll.) dan Kurikulum Pesantren (Al-Qur’an,
+                  Fikih, Aqidah, Bahasa Arab, dll.) secara seimbang agar siswa berkembang secara intelektual dan
+                  spiritual.</p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Program Unggulan</h3>
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Program Tahfidz:</strong> Target hafalan 30 juz selama 3 tahun.</li>
+                  <li><strong>Akhlakul Karimah:</strong> Penanaman adab dalam keseharian.</li>
+                  <li><strong>Ekstrakurikuler:</strong> Kaligrafi, rebana, pramuka islami, barista, beladiri, dan
+                    lainnya.</li>
+                  <li><strong>Konseling Islami:</strong> Pembinaan emosional & spiritual.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Lingkungan dan Fasilitas</h3>
+                <p>Lingkungan belajar yang islami, bersih, dan kondusif. Fasilitas memadai dengan pilihan sistem
+                  boarding bagi siswa yang ingin tinggal di asrama.</p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Tenaga Pengajar</h3>
+                <p>Guru-guru yang profesional, berakhlak baik, serta menjadi teladan. Banyak dari mereka lulusan
+                  pesantren dan perguruan tinggi ternama.</p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Prestasi dan Alumni</h3>
+                <p>Banyak alumni yang berhasil meraih prestasi dalam bidang tahfidz, sains, maupun keagamaan, serta
+                  melanjutkan pendidikan ke institusi terkemuka.</p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Komitmen Masa Depan</h3>
+                <p>Sekolah terus berkembang secara modern dan adaptif, namun tetap menjunjung tinggi nilai-nilai Islam
+                  yang menjadi fondasinya.</p>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold">Penutup</h3>
+                <p>SMP Takhassus Al-Furqon bukan sekadar sekolah, tetapi juga madrasah kehidupan yang menanamkan
+                  nilai-nilai Islam dalam seluruh aspek pembelajaran dan kehidupan sehari-hari siswa.</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="mt-10 max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="aspect-video">
+                <iframe class="w-full h-full rounded-xl"
+                  src="https://www.youtube.com/embed/4dvqWBYnez0?si=R5l1MH_1TJ4UBDmL" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+              <div class="aspect-video">
+                <iframe class="w-full h-full rounded-xl"
+                  src="https://www.youtube.com/embed/xiC3DyKPcsI?si=RuD1fdJU2VNYKzoG" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </section>
+        </main>
+      </section>
+    </div>
+    <!--akhir konten utama-->
+    <div class="box box5 rounded-2xl" id="Berita">
+      <h3 class="p-2 text-2xl mb-4 font-bold text-center rounded ">
+        Galeri Kegiatan</h3>
+      <div class="services">
+        <!-- Copy isi dari sebelumnya -->
+        <div class="service-box overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+          <img alt="dauroh" class="w-full h-auto rounded-lg transition duration-300 hover:opacity-80 hover:scale-105"
+            src="DAUROHILMIYAH.jpg" />
+          <h3 class="text-center font-medium text-lg">Dauroh Ilmiyah
+          </h3>
+          <p class="p-1">Artikel tentang kegiatan dauroh ilmiyah Pon-Pes The Holy Al-Furqon.
+          </p>
+          <a class="inline-block text-center font-medium text-green-400 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-500"
+            href="dauroh.html#dauroh">
+            View Details →
+          </a>
+        </div>
+        <div class="service-box overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+          <img alt="UI Design" class="w-full h-auto rounded-lg transition duration-300 hover:opacity-80 hover:scale-105"
+            src="images3.jpg" />
+          <h3 class="text-center font-medium text-lg">Hadroh Santri
+          </h3>
+          <p class="p-1">Artikel tentang kegiatan Ekstakurikuler rebana santri.</p>
+          <a class="inline-block text-center font-medium text-green-400 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-500"
+            href="hadroh.html#hadroh">
+            View Details →
+          </a>
+        </div>
+        <div class="service-box overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+          <img alt="Apps Dev" class="w-full h-auto rounded-lg transition duration-300 hover:opacity-80 hover:scale-105"
+            src="images2.jpg" />
+          <h3 class="text-center font-medium text-lg">Prestasi
+          </h3>
+          <p class="p-1">Artikel tentang prestasi santri.</p>
+          <a class="inline-block text-center font-medium text-green-400 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-500"
+            href="#">
+            View Details →
+          </a>
+        </div>
+        <div class="service-box overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+          <img alt="Plugin Dev"
+            class="w-full h-auto rounded-lg transition duration-300 hover:opacity-80 hover:scale-105"
+            src="images1.jpg" />
+          <h3 class="text-center font-medium text-lg">Semaan
+          </h3>
+          <p class="p-1">Artikel tentang kegiatan tasmiul Qur'an.</p>
+          <a class="inline-block text-center font-medium text-green-400 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-500"
+            href="#">
+            View Details →
+          </a>
+        </div>
+        <div class="service-box overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+          <img alt="Consult" class="w-full h-auto rounded-lg transition duration-300 hover:opacity-80 hover:scale-105"
+            src="Pangkal-bahasa-arab-600x600.jpg" />
+          <h3 class="text-center font-medium text-lg">Kajian Kitab Kuning
+          </h3>
+          <p class="p-1">Artikel tentang kegiatan Kajian kitab salaf.</p>
+          <a class="inline-block text-center font-medium text-green-400 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-500"
+            href="#">
+            View Details →
+          </a>
+        </div>
+        <div class="service-box overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+          <img alt="Cyber Sec" class="w-full h-auto rounded-lg transition duration-300 hover:opacity-80 hover:scale-105"
+            src="PENCAK SILAT.jpg" />
+          <h3 class="text-center font-medium text-lg">Pencak Silat
+          </h3>
+          <p class="p-1">Artikel tentang kegiatan Ekstakurikuler pencak silat.</p>
+          <a class="inline-block text-center font-medium text-green-400 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-500"
+            href="#">
+            View Details →
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="box box7 pt-16" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+    <!--program unggulan-->
+    <div class="text-2xl mb-2 font-bold text-center p-1 text-gray-900" id="program">
+      Program Unggulan</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 text-l text-left p-2 w-full h-full mt-6 rounded-xl">
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+        class="p-5 bg-[rgb(84,113,79)] rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:scale-105">
+        <i class="fas fa-check-circle text-lime-400 mr-2"></i><strong>Takhassus Tahfidzul Qur’an</strong>
+        <ul class="pl-6 list-disc">
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Hafalan Al-Qur’an 30 Juz</li>
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Penguasaan Bahasa Arab</li>
+        </ul>
+        <div class="flex justify-center my-4">
+          <img alt="Penguasaan Bahasa Arab" class="max-w-[300px] w-full rounded-lg shadow-md"
+            src="Dasar-Dasar-Penguasaan-01-300x360.jpeg" />
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+        class="p-5 bg-[rgb(84,113,79)] rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:scale-105">
+        <i class="fas fa-check-circle text-lime-400 mr-2"></i><strong>Takhassus Diniyah</strong>
+        <ul class="pl-6 list-disc">
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Tafaqquh Fiddin</li>
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Diniyah Salafiyah</li>
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Penguasaan Bahasa Arab</li>
+        </ul>
+        <div class="flex justify-center my-4">
+          <img alt="Kitab Diniyah Salafiyah" class="max-w-[300px] w-full rounded-lg shadow-md"
+            src="Pangkal-bahasa-arab-600x600.jpg" />
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+        class="p-5 bg-[rgb(84,113,79)] rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:scale-105">
+        <i class="fas fa-check-circle text-lime-400 mr-2"></i><strong>Takhassus Science</strong>
+        <ul class="pl-6 list-disc">
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Kurikulum Nasional</li>
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Science Class</li>
+          <li><i class="fas fa-check-circle text-lime-400 mr-2"></i>Penguasaan Bahasa Inggris</li>
+        </ul>
+        <div class="flex justify-center my-4">
+          <img alt="Belajar Bahasa Inggris" class="max-w-[300px] w-full rounded-lg shadow-md"
+            src="ILUSTRASI BELAJAR BAHASA INGGRIS.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--ekstrakurikuler-->
+  <div class="box box9 pt-16" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+    <div class="text-2xl mb-2 font-bold text-center p-1 text-gray-900" id="ekstrakurikuler">
+      Ekstrakurikuler
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-x-4 gap-y-4 text-l text-left p-2 w-full h-full mt-6 rounded-xl">
+      <div class="p-5 border border-gray-200 bg-white rounded-xl shadow"><i
+          class="fas fa-check-circle text-lime-400 mr-2"></i><strong class="text-gray-900"><a
+            href="hadroh.html#hadroh">Rebana</a></strong>
+        <div class="flex justify-center my-4">
+          <img alt="Rebana" class="max-w-[300px] w-full rounded-lg shadow-md" src="REBANA.jpg" />
+        </div>
+      </div>
+      <div class="p-5 border border-gray-200 bg-white rounded-xl shadow"><i
+          class="fas fa-check-circle text-lime-400 mr-2"></i><strong class="text-gray-900">Pencak
+          Silat</strong>
+        <div class="flex justify-center my-4">
+          <img alt="Pencak Silat" class="max-w-[300px] w-full rounded-lg shadow-md" src="PENCAK SILAT.jpg" />
+        </div>
+      </div>
+      <div class="p-5 border border-gray-200 bg-white rounded-xl shadow"><i
+          class="fas fa-check-circle text-lime-400 mr-2"></i><strong class="text-gray-900">Dauroh
+          Ilmiyah</strong>
+        <div class="flex justify-center my-4">
+          <img alt="Dauroh Ilmiyah" class="max-w-[300px] w-full rounded-lg shadow-md" src="DAUROHILMIYAH.jpg" />
+        </div>
+      </div>
+      <div class="p-5 border border-gray-200 bg-white rounded-xl shadow"> <i
+          class="fas fa-check-circle text-lime-400 mr-2"></i><strong class="text-gray-900">Pelatihan
+          Barista</strong>
+        <div class="flex justify-center my-4">
+          <img alt="Pelatihan Barista" class="max-w-[300px] w-full rounded-lg shadow-md" src="BARISTA.jpeg" />
+        </div>
+      </div>
+      <div class="p-5 border border-gray-200 bg-white rounded-xl shadow"> <i
+          class="fas fa-check-circle text-lime-400 mr-2"></i><strong class="text-gray-900">Futsal</strong>
+        <div class="flex justify-center my-4">
+          <img alt="Futsal" class="max-w-[300px] w-full rounded-lg shadow-md" src="FUTSAL.jpg" />
+        </div>
+      </div>
+      <div class="p-5 border border-gray-200 bg-white rounded-xl shadow"> <i
+          class="fas fa-check-circle text-lime-400 mr-2"></i><strong class="text-gray-900">Kaligrafi</strong>
+        <div class="flex justify-center my-4">
+          <img alt="Kaligrafi" class="max-w-[300px] w-full rounded-lg shadow-md" src="KALIGRAFI.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Kontak section -->
+  <div id="kontak" class="box box8 p-9 pt-16" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+    <div class="text-2xl mb-6 font-bold text-center p-1 text-gray-900 mb-6">
+      Kontak Kami
+    </div>
+    <section class="text-gray-900 fade-in">
+      <div class="mx-auto w-full px-4 md:px-6">
+        <div class="grid grid-cols-1 md:[grid-template-columns:1fr_auto_auto] gap-x-12 gap-y-2 text-xl text-left">
+          <p class="flex items-start"><i class="fas fa-map-marker-alt mr-2 mt-1 text-green-400 "></i>
+            <a class="text-blue-700 hover:text-yellow-500 "
+              href="https://www.google.com/maps/dir//PONDOK+PESANTREN+THE+HOLY+AL-FURQON+..." target="_blank">
+              Jl. Mangkang Wetan - Mangunharjo, Mangkang Wetan, Kec. Tugu - Kota Semarang - Jawa Tengah 50154
+            </a>
+          </p>
+          <p class="flex items-start"><i class="fab fa-facebook mr-2 mt-1 text-green-400"></i>
+            <a class="text-blue-700 hover:text-yellow-500 " href="https://www.facebook.com/ponpes.alfurqon.35"
+              target="_blank">
+              SMP TAKHASSUS AL-FURQON
+            </a>
+          </p>
+          <p class="flex items-start"><i class="fab fa-instagram mr-2 mt-1 text-green-400"></i>
+            <a class="text-blue-700 hover:text-yellow-500 " href="https://www.instagram.com/ponpes.the_holy_alfurqon"
+              target="_blank">
+              SMP TAKHASSUS AL-FURQON
+            </a>
+          </p>
+          <p class="flex items-start"><i class="fas fa-envelope mr-2 mt-1 text-green-400"></i> -</p>
+          <p class="flex items-start"><i class="fab fa-whatsapp mr-2 mt-1 text-green-400"></i>
+            <a class="text-blue-700 hover:text-yellow-500 " href="https://wa.me/6285189064063" target="_blank">
+              0851 8906 4063
+            </a>
+          </p>
+          <p class="flex items-start"><i class="fab fa-youtube mr-2 mt-1 text-green-400"></i>
+            <a class="text-blue-700 hover:text-yellow-500 "
+              href="https://www.youtube.com/channel/UCXgqnyXj0kU7UtRkrZ2HKLQ" target="_blank">
+              Ponpes The Holy Al-Furqon
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Lokasi section -->
+  <div class="box box6 pt-16" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+    data-aos-easing="ease-in-out" id="lokasi">
+    <div class="text-2xl mb-2 font-bold text-center p-1 text-gray-900">
+      Lokasi Kami
+    </div>
+    <h3 class="text-center text-xl mb-4">Pondok Pesantren The Holy
+      Al-Furqon I Mangkang wetan, Kec. Tugu - Kota Semarang</h3>
+    <div class="map-container">
+      <iframe allowfullscreen="" class="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.379518767142!2d110.30706907442055!3d-6.964477368189089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e705feb16813ddf%3A0xda385e5c40c1a2a3!2sPONDOK%20PESANTREN%20THE%20HOLY%20AL-FURQON!5e0!3m2!1sid!2sid!4v1748076760108!5m2!1sid!2sid"
+        width="100%">
+      </iframe>
+    </div>
+  </div>
+
+
+  <footer class="text-center py-4 text-sm text-gray-500">
+    © 2025 SMP Takhassus Al-Furqan. All rights reserved.
+  </footer>
+  <footer>
+    <div class="bg-[#111827] text-white text-center text-2xl p-6">
+      <a href="https://www.facebook.com/ponpes.alfurqon.35" target="_blank"><i
+          class="fab fa-facebook mr-2 mt-1 hover:scale-150 hover:text-yellow-500"></i>
+      </a>   
+      <a href="https://www.instagram.com/ponpes.the_holy_alfurqon" target="_blank"><i
+          class="fab fa-instagram mr-2 mt-1 hover:scale-150 hover:text-yellow-500"></i>
+      </a>   
+      <a href="https://wa.me/6285189064063" target="_blank"><i
+          class="fab fa-whatsapp mr-2 mt-1 hover:scale-150 hover:text-yellow-500"></i>
+      </a>   
+      <a href="https://www.youtube.com/channel/UCXgqnyXj0kU7UtRkrZ2HKLQ" target="_blank"><i
+          class="fab fa-youtube mr-2 mt-1 hover:scale-150 hover:text-yellow-500"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+    const header = document.getElementById('mainHeader');
+    const hero = document.querySelector('.hero');
+    let isSticky = false;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) {
+        // Hero tidak terlihat, header jadi fixed
+        header.classList.add('sticky-header');
+        header.style.top = "0";
+        isSticky = true;
+      } else {
+        // Hero muncul, header lepas dari fixed dan nungguin hero
+        header.classList.remove('sticky-header');
+        header.style.top = "auto";
+        isSticky = false;
+      }
+    }, { threshold: 0 });
+
+    observer.observe(hero);
+  </script>
+  <script>
+    const slides = document.getElementById('carouselSlides');
+    const dots = document.querySelectorAll('#carouselDots div');
+    const totalSlides = dots.length;
+    let currentSlide = 0;
+
+    function updateCarousel() {
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, index) => {
+        dot.classList.remove('bg-white', 'bg-opacity-100');
+        dot.classList.add('bg-white', 'bg-opacity-50');
+        if (index === currentSlide) {
+          dot.classList.remove('bg-opacity-50');
+          dot.classList.add('bg-opacity-100');
+        }
+      });
+    }
+
+    document.getElementById('nextSlide').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    });
+
+    document.getElementById('prevSlide').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    });
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        currentSlide = parseInt(dot.getAttribute('data-index'));
+        updateCarousel();
+      });
+    });
+
+    let startX = 0;
+    slides.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    slides.addEventListener('touchend', (e) => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+      if (diff > 50) {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+      } else if (diff < -50) {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+      }
+    });
+
+    updateCarousel();
+  </script>
+  <script>
+    function toggleSubMenu(el) {
+      const submenu = el.nextElementSibling;
+      const arrow = el.querySelector('.arrow');
+      submenu.classList.toggle('hidden');
+      arrow.classList.toggle('rotate-180');
+    }
+  </script>
+  <script>
+    let isSidebarOpen = false;
+    let isAnimating = false;
+
+    function toggleSidebar() {
+      const overlay = document.getElementById('sidebarOverlay');
+      if (isAnimating) return;
+
+      const sidebar = document.getElementById('mobileSidebar');
+      const hamburger = document.getElementById('hamburgerBtn');
+      const rect = hamburger.getBoundingClientRect();
+
+      if (!isSidebarOpen && rect.top > 100) {
+        isAnimating = true;
+
+        const header = document.getElementById('mainHeader');
+        window.scrollTo({
+          top: header.offsetTop,
+          behavior: 'smooth'
+        });
+
+
+        setTimeout(() => {
+          sidebar.classList.remove('-translate-x-full');
+          sidebar.classList.add('translate-x-0');
+          overlay.classList.remove('hidden');
+          isSidebarOpen = true;
+          isAnimating = false;
+        }, 500); // tunggu scroll selesai
+      } else {
+        if (isSidebarOpen) {
+          sidebar.classList.remove('translate-x-0');
+          sidebar.classList.add('-translate-x-full');
+          overlay.classList.add('hidden');
+          isSidebarOpen = false;
+        } else {
+          sidebar.classList.remove('-translate-x-full');
+          sidebar.classList.add('translate-x-0');
+          overlay.classList.remove('hidden');
+          isSidebarOpen = true;
+        }
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      if (isSidebarOpen && !isAnimating) {
+        const sidebar = document.getElementById('mobileSidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        sidebar.classList.remove('translate-x-0');
+        sidebar.classList.add('-translate-x-full');
+
+        overlay.classList.add('hidden');
+
+        isSidebarOpen = false;
+      }
+    });
+    function showSidebar() {
+      const sidebar = document.getElementById('mobileSidebar');
+      const header = document.getElementById('mainHeader');
+      const headerHeight = header.offsetHeight;
+
+      sidebar.style.top = `${headerHeight}px`;
+      sidebar.classList.remove('-translate-x-full');
+      sidebar.classList.add('translate-x-0');
+      isSidebarOpen = true;
+    }
+
+  </script>
+  <script>
+    const darkToggle = document.getElementById('darkToggle');
+    const toggleCircle = document.getElementById('toggleCircle');
+
+    // Aktifkan dark mode jika sebelumnya sudah disimpan
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark');
+      darkToggle.checked = true;
+      toggleCircle.classList.add('translate-x-5');
+    }
+
+    darkToggle.addEventListener('change', function () {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('darkMode', 'enabled');
+        toggleCircle.classList.add('translate-x-5');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+        toggleCircle.classList.remove('translate-x-5');
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('input[type="checkbox"][id^="darkToggle"], #darkToggleDesktop input, .mobile-menu-item input');
+      const circles = document.querySelectorAll('#darkToggleDesktop div > div, .mobile-menu-item div > div');
+
+      function applyDarkMode(enabled) {
+        document.documentElement.classList.toggle('dark', enabled);
+        localStorage.setItem('darkMode', enabled ? 'enabled' : 'disabled');
+
+        toggles.forEach(toggle => toggle.checked = enabled);
+        circles.forEach(circle => {
+          circle.classList.toggle('translate-x-5', enabled);
+        });
+      }
+
+      const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
+      applyDarkMode(darkModeEnabled);
+
+      toggles.forEach(toggle => {
+        toggle.addEventListener('change', () => {
+          applyDarkMode(toggle.checked);
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('#heroSliderImages img');
+      let index = 0;
+
+      function showSlide(i) {
+        images.forEach((img, idx) => {
+          img.classList.toggle('opacity-100', idx === i);
+          img.classList.toggle('opacity-0', idx !== i);
+        });
+      }
+
+      showSlide(index);
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        showSlide(index);
+      }, 5000);
+    });
+  </script>
+  <script>
+
+    function updateSlide() {
+      const container = document.getElementById('carouselSlides');
+      container.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    document.getElementById('nextSlide').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlide();
+    });
+
+    document.getElementById('prevSlide').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    });
+
+    document.querySelectorAll('#carouselDots > div').forEach(dot => {
+      dot.addEventListener('click', () => {
+        currentIndex = parseInt(dot.dataset.index);
+        updateSlide();
+      });
+    });
+
+    // Modal functions
+    function openModal(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('imageModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').classList.add('hidden');
+    }
+
+    document.getElementById('imageModal').addEventListener('click', function (e) {
+      if (e.target.id === 'imageModal') {
+        closeModal();
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Modal logic
+      window.openModal = function (src) {
+        const modalImg = document.getElementById('modalImage');
+        const modal = document.getElementById('imageModal');
+        if (modalImg && modal) {
+          modalImg.src = src;
+          modal.classList.remove('hidden');
+        }
+      }
+
+      window.closeModal = function () {
+        const modal = document.getElementById('imageModal');
+        if (modal) modal.classList.add('hidden');
+      }
+
+      const modal = document.getElementById('imageModal');
+      if (modal) {
+        modal.addEventListener('click', function (e) {
+          if (e.target.id === 'imageModal') {
+            closeModal();
+          }
+        });
+      }
+    });
+  </script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
